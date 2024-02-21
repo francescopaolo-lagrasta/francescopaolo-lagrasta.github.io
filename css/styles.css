@@ -2927,7 +2927,7 @@ td:last-child {
 }
 
 .blog-card__cat-links a {
-	color: var(--color-1);
+	color: var(--color-1-dark);
 }
 
 .blog-card__title {
