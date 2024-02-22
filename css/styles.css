@@ -2924,6 +2924,8 @@ td:last-child {
 
 .blog-card__cat-links {
 	font-size: var(--text-sm);
+	line-height: 1.1;
+	margin-bottom: 3%;
 }
 
 .blog-card__cat-links a {
@@ -2932,11 +2934,19 @@ td:last-child {
 
 .blog-card__title {
 	margin     : 0;
-	line-height: 1.1574;
+	line-height: 0.9;
 }
 
 .blog-card__title a {
 	color: var(--color-text-dark);
+	line-height: 0.4;
+}
+.blog-card_authors {
+	color: var(--color-1-darker);
+	line-height: 150% ;
+	font-size: 60%;
+	margin-bottom: 3%;
+	
 }
 
 /* --------------------------------------------------------------------
