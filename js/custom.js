@@ -1,13 +1,17 @@
+// Create the observer like the examples above
 const observer = new IntersectionObserver(entries => {
-    // Loop over the entries
-    entries.forEach(entry=> {
-      // If the element is visible
-      console.log(entry)
-      if (entry.isIntersecting) {
-        // Add the animation class
-        entry.target.classList.add('marx');
-      }
-    });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('marx');
+      return;
+    }
+
+    entry.target.classList.remove('marx');
   });
-  
-  observer.observe(document.querySelector('.marked'));
+});
+
+// Get multiple elements instead of a single one using "querySelectorAll"
+const squares = document.querySelectorAll('.marked');
+
+// Loop over the elements and add each one to the observer
+squares.forEach((element) => observer.observe(element));
