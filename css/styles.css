@@ -2911,7 +2911,7 @@ td:last-child {
 
 .social-list svg path,
 .social-list svg circle {
-	fill      : rgba(255, 255, 255, 0.5);
+	fill      : rgb(0, 255, 30);
 	transition: all 0.5s;
 }
 
